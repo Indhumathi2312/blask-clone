@@ -141,7 +141,7 @@ export default function Navbar() {
             {/* Header CTA Button */}
             <Button
               href="https://calendly.com/blask-agency/discovery"
-              text="Book a call"
+              text="Book a Free Consultation"
               variant="small"
             />
           </div>

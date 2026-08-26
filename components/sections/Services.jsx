@@ -24,6 +24,30 @@ export default function Services() {
     </svg>
   );
 
+  const getVectorSvg = (variant) => {
+    switch (variant) {
+      case 'second':
+        return brandingSvg;
+      case 'third':
+        return designSvg;
+      case 'first':
+      default:
+        return devSvg;
+    }
+  };
+
+  const getVectorClass = (variant) => {
+    switch (variant) {
+      case 'second':
+        return 'vector-wiw second w-embed';
+      case 'third':
+        return 'vector-wiw third w-embed';
+      case 'first':
+      default:
+        return 'vector-wiw first w-embed';
+    }
+  };
+
   return (
     <section id="services" className="section wiw-section">
       <div className="w-layout-blockcontainer main-container w-container">
@@ -35,10 +59,10 @@ export default function Services() {
           className="headline-wiw services"
         >
           <Tag text="our services" variant="base" />
-          <h2 className="no-margins">We handle everything you need to launch and grow</h2>
+          <h2 className="no-margins">Everything you need to build, launch, and scale — under one roof</h2>
         </motion.div>
 
-        {/* 3 Service Cards */}
+        {/* Services Cards using exact Webflow grid and card-wiw styles */}
         <motion.div
           initial={{ opacity: 0, filter: 'blur(12px)' }}
           whileInView={{ opacity: 1, filter: 'blur(0px)' }}
@@ -46,41 +70,20 @@ export default function Services() {
           viewport={{ once: true }}
           className="w-layout-grid wiw-thirds"
         >
-          {/* Branding Card */}
-          <div className="wrap-card-wiw">
-            <div className="card-wiw opacity-100">
-              <h3 className="text-large text-body-bold">Branding</h3>
-              <div className="vector-wiw second w-embed">{brandingSvg}</div>
-              <div className="body-medium">{services[0].description}</div>
-            </div>
-          </div>
-
-          {/* Web Design Card */}
-          <div className="wrap-card-wiw second">
-            <div className="card-wiw second opacity-100">
-              <h3 className="text-large text-body-bold">Web Design</h3>
-              <div className="vector-wiw third w-embed">{designSvg}</div>
-              <div className="body-medium">{services[1].description}</div>
-            </div>
-          </div>
-
-          {/* Development Card */}
-          <div className="wrap-card-wiw third">
-            <div className="card-wiw third opacity-100">
-              <h3 className="text-large text-body-bold">Development</h3>
-              <div className="vector-wiw first w-embed">{devSvg}</div>
-              <div className="body-medium">
-                Clean, scalable builds in{' '}
-                <a href="https://webflow.com/" target="_blank" rel="noopener noreferrer" className="link-text">
-                  Webflow
-                </a>{' '}
-                that give you speed, control, and freedom to grow without technical headaches.
+          {services.map((item) => (
+            <div key={item.title} className={`wrap-card-wiw ${item.variant}`}>
+              <div className={`card-wiw ${item.variant} opacity-100`}>
+                <h3 className="text-large text-body-bold">{item.title}</h3>
+                <div className={getVectorClass(item.variant)}>
+                  {getVectorSvg(item.variant)}
+                </div>
+                <div className="body-medium">{item.description}</div>
               </div>
             </div>
-          </div>
+          ))}
         </motion.div>
 
-        {/* Tech Stack Grid */}
+        {/* Tech Stack Section */}
         <motion.div
           initial={{ opacity: 0, filter: 'blur(12px)' }}
           whileInView={{ opacity: 1, filter: 'blur(0px)' }}
@@ -88,17 +91,24 @@ export default function Services() {
           viewport={{ once: true }}
           className="wrap-tech"
         >
-          <Tag text="our tech stack" variant="base" />
+          <Tag text="our stack" variant="base" />
+          <div className="text-center my-4">
+            <h3 className="text-2xl sm:text-3xl  ">Built With Tools Made for Speed and Scale</h3>
+          </div>
           <div className="master-marquee logos">
             <div className="tech-stack flex flex-wrap items-center justify-center gap-6 sm:gap-8 max-w-[740px] mx-auto py-4">
               {techStack.map((item) => (
-                <img
-                  key={item.name}
-                  src={item.src}
-                  loading="lazy"
-                  alt={item.name}
-                  className={`image-tech-stack ${item.name === 'GSAP' ? 'gsap' : ''} h-8 sm:h-9 object-contain`}
-                />
+                <div key={item.name} className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-sm font-medium text-gray-600">
+                  {item.src ? (
+                    <img
+                      src={item.src}
+                      loading="lazy"
+                      alt={item.name}
+                      className="image-tech-stack h-6 sm:h-7 object-contain"
+                    />
+                  ) : null}
+                  <span>{item.name}</span>
+                </div>
               ))}
             </div>
           </div>

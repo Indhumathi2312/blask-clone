@@ -29,12 +29,12 @@ export default function Testimonials() {
           viewport={{ once: true }}
           className="headline-testimonials-home-a flex flex-col items-center text-center gap-4 mb-12"
         >
-          <Tag text="client success stories" variant="depth" />
+          <Tag text="Client success stories" variant="depth" />
           <h2 className="no-margins text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
-            Hear from those who have worked with us
+            Hear From the Teams We’ve Worked With
           </h2>
           <div className="pt-2">
-            <Button href="https://calendly.com/blask-agency/discovery" text="Book an intro call" variant="main" />
+            <Button href="https://calendly.com/blask-agency/discovery" text="Book a Free Consultation" variant="main" />
           </div>
         </motion.div>
 

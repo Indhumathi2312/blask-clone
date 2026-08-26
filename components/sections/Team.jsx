@@ -12,7 +12,7 @@ export default function Team() {
   const jacekSrcset = '/images/69e65fc34e6c205531badfa4_IMG_2357-p-500.avif 500w, /images/69e65fc34e6c205531badfa4_IMG_2357.avif 1000w';
 
   return (
-    <section id="services" className="section wiw-section py-16 sm:py-24">
+    <section id="about" className="section wiw-section py-16 sm:py-24">
       <div className="w-layout-blockcontainer main-container w-container">
         <div className="w-layout-grid column-halves grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
           {/* Left Text Column */}
@@ -24,24 +24,17 @@ export default function Team() {
             className="content-column lg:col-span-6 flex flex-col justify-between space-y-6"
           >
             <div className="headline-column space-y-4">
-              <Tag text="About us" variant="base" />
+              <Tag text="about us" variant="base" />
               <div className="heading-column space-y-4">
-                <h2 className="text-h3 no-margins text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
-                  People behind Blask
+                <h2 className="text-h3 no-margins text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
+                  The Team Behind Blask
                 </h2>
                 <div className="body-medium text-sm sm:text-base text-gray-300 leading-relaxed space-y-4">
                   <p>
-                    We've been on your side of the table. Before starting Blask, we worked in sales, marketing, and operations - across startups and large corporations. We saw the same problem everywhere: companies investing in growth while their website quietly worked against them.
+                    We've built and scaled digital products across startups and established businesses. We saw the same gap everywhere: companies investing heavily in growth while their website, app, or manual processes quietly held them back.
                   </p>
                   <p>
-                    Around 2019, we've independently started building websites and conversion-focused experiences for tech companies.
-                  </p>
-                  <p>
-                    In 2024, we joined forces, combining our backgrounds in{' '}
-                    <strong className="text-white font-bold">business</strong>,{' '}
-                    <strong className="text-white font-bold">marketing</strong>,{' '}
-                    <strong className="text-white font-bold">design</strong>, and{' '}
-                    <strong className="text-white font-bold">development</strong> into one studio with a single focus: making sure your website is never the weakest link in your growth.
+                    That's why we built Blask — a team combining design, engineering, and AI expertise into one studio, so your digital presence is never the thing slowing you down.
                   </p>
                 </div>
               </div>
@@ -50,7 +43,7 @@ export default function Team() {
             <div className="pt-2">
               <Button
                 href="https://calendly.com/blask-agency/discovery"
-                text="Get in touch"
+                text="Get in Touch"
                 variant="secondary"
               />
             </div>

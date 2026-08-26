@@ -16,8 +16,8 @@ export default function Work() {
           viewport={{ once: true }}
           className="headline-wiw"
         >
-          <Tag text="our work" variant="base" />
-          <h2 className="no-margins">Revenue-generating websites, built and shipped fast</h2>
+          <Tag text="Our work" variant="base" />
+          <h2 className="no-margins">Digital Products Built to Move the Needle</h2>
         </motion.div>
 
         <div id="pages" className="wrap-sales-pages">
@@ -69,6 +69,17 @@ export default function Work() {
               ))}
             </div>
           </div>
+        </div>
+
+        <div className="button-wrap-centered pt-12 flex justify-center">
+          <a
+            href="https://calendly.com/blask-agency/discovery"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 rounded-xl bg-white text-black font-semibold text-base hover:bg-gray-200 transition-colors shadow-lg"
+          >
+            See Our Work
+          </a>
         </div>
       </div>
     </section>
