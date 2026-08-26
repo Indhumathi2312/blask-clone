@@ -5,17 +5,17 @@ import Button from '../ui/Button';
 
 export default function Comparison() {
   const beforeItems = [
-    'Your product is solid - but your website doesn’t communicate it.',
-    'You’re driving traffic, but conversions stay flat.',
-    'Every update takes too long because design, dev, and marketing are disconnected.',
-    'You’ve outgrown your brand and website.\nBut fixing it feels like a massive, slow rebuild.',
+    "You have a great product or service, but your website or app doesn't reflect it.",
+    "Leads come in, but your systems can't keep up with follow-ups.",
+    "Every new feature request turns into a slow back-and-forth with developers who don't understand your business.",
+    "You're stitching together tools, freelancers, and outdated code instead of one dependable system.",
   ];
 
   const afterItems = [
-    'A website that clearly explains your product - and sells it. So you stop losing deals.',
-    'A landing page that actually converts the traffic you\'re already paying for.',
-    'A scalable design system so your team can move fast without breaking things.',
-    'Strong website accelerating growth, not holding you back.',
+    "A website or app that clearly communicates your value — and converts.",
+    "AI-powered workflows and chatbots that handle repetitive work so your team doesn't have to.",
+    "A scalable product built to grow with you, not something you'll need to rebuild in a year.",
+    "One accountable team handling strategy, design, and code — not five vendors pointing fingers.",
   ];
 
   const crossIcon = (
@@ -40,9 +40,9 @@ export default function Comparison() {
           viewport={{ once: true }}
           className="headline-wiw"
         >
-          <h2 className="no-margins">Do you know how much is a weak website costing you?</h2>
+          <h2 className="no-margins">Is your digital presence keeping up with your growth?</h2>
           <div className="body-medium">
-            Here's what we hear on every sales call - and what changes after working with us.
+            Here's what most businesses tell us before they work with us — and what changes after.
           </div>
         </motion.div>
 
@@ -58,8 +58,8 @@ export default function Comparison() {
             <div className="plan-middle-tile">
               <div className="plan-price-tile">
                 <div className="conmpare-title">
-                  <div className="text-h4 body-strong">Before working with us</div>
-                  <div>Most founders we meet are stuck here:</div>
+                  <div className="text-h4 body-strong">Before Working With Us</div>
+                  <div>Most teams we meet are stuck here:</div>
                 </div>
               </div>
             </div>
@@ -89,8 +89,8 @@ export default function Comparison() {
             <div className="plan-middle-tile">
               <div className="plan-price-tile">
                 <div className="conmpare-title">
-                  <div className="text-h4 body-strong">After working with us</div>
-                  <div className="body-strong">When design and dev work as one system:</div>
+                  <div className="text-h4 body-strong">After Working with Us</div>
+                  <div className="body-strong">When design, development, and automation work as one system:</div>
                 </div>
               </div>
             </div>
@@ -111,7 +111,7 @@ export default function Comparison() {
         </div>
 
         <div className="button-wrap-centered">
-          <Button href="https://calendly.com/blask-agency/discovery" text="Book an intro call" variant="main" />
+          <Button href="https://calendly.com/blask-agency/discovery" text="Talk to Our Team" variant="main" />
         </div>
       </div>
     </section>

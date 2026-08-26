@@ -19,9 +19,9 @@ export default function Process() {
           viewport={{ once: true }}
           className="headline-process flex flex-col items-center text-center max-w-2xl mx-auto mb-16 gap-4"
         >
-          <Tag text="our process" variant="depth" />
+          <Tag text="Our process" variant="depth" />
           <h2 className="no-margins text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
-            A straightforward process that delivers real results
+            A Clear Process, Built to Remove Guesswork
           </h2>
         </motion.div>
 

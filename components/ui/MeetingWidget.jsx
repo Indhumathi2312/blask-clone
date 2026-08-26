@@ -40,7 +40,7 @@ export default function MeetingWidget() {
         alt="Blask Icon"
         className="icon-call"
       />
-      <div className="intro-call-par">Free 30-minute intro call</div>
+      <div className="intro-call-par">Free 30-minute consultation</div>
       <a
         href="https://calendly.com/blask-agency/discovery"
         target="_blank"

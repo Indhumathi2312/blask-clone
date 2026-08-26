@@ -15,19 +15,18 @@ export default function CtaSection() {
           className="master-cta-b flex flex-col items-center text-center max-w-2xl mx-auto gap-6 sm:gap-8"
         >
           <div className="headline-cta-b space-y-4">
-            <h2 className="text-h1 text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-tight">
-              Ready to start<br />
-              your new project?
+            <h2 className="text-h1 text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight">
+              Ready to build something that actually works for your business?
             </h2>
-            <div className="body-strong text-sm sm:text-base md:text-lg text-white/90 font-medium max-w-lg mx-auto">
-              Get professional design delivered at startup speed. Schedule a call below.
+            <div className="body-strong text-sm sm:text-base md:text-lg text-white/90 font-medium max-w-xl mx-auto">
+              Get a strategy call, a clear plan, and a team that ships. No lengthy proposals — just a conversation about what you need.
             </div>
           </div>
 
           <div className="button-wrap-centered pt-2">
             <Button
               href="https://calendly.com/blask-agency/discovery"
-              text="Book an intro call"
+              text="Book a Free Consultation"
               variant="main"
             />
           </div>

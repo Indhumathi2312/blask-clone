@@ -24,6 +24,14 @@ export default function Footer() {
     </svg>
   );
 
+  const instagramIcon = (
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+    </svg>
+  );
+
   return (
     <footer className="footer bg-[#080808] text-white pt-16 pb-12 border-t border-white/10">
       <div className="w-layout-blockcontainer main-container w-container">
@@ -44,7 +52,7 @@ export default function Footer() {
                   </Link>
                 </div>
                 <p className="text-large text-gray-300 text-sm sm:text-base md:text-lg max-w-md leading-relaxed">
-                  Growth-driven creative partner for tech startups
+                  Engineering-led digital partner for ambitious businesses
                 </p>
               </div>
             </div>
@@ -56,18 +64,18 @@ export default function Footer() {
                   Company
                 </div>
                 <div className="footer-links-column flex flex-col space-y-2 text-sm sm:text-base">
-                  <Link href="/#services" className="footer-link text-gray-300 hover:text-white transition-colors duration-200">
+                  <Link href="#services" className="footer-link text-gray-300 hover:text-white transition-colors duration-200">
                     Services
                   </Link>
-                  <Link href="/#work" className="footer-link text-gray-300 hover:text-white transition-colors duration-200">
+                  <Link href="#work" className="footer-link text-gray-300 hover:text-white transition-colors duration-200">
                     Work
                   </Link>
-                  <Link href="/#process" className="footer-link text-gray-300 hover:text-white transition-colors duration-200">
+                  <Link href="#process" className="footer-link text-gray-300 hover:text-white transition-colors duration-200">
                     Process
                   </Link>
-                  <Link href="/#services" className="footer-link text-gray-300 hover:text-white transition-colors duration-200">
-                    User Research
-                  </Link>
+                  <a href="https://calendly.com/blask-agency/discovery" target="_blank" rel="noopener noreferrer" className="footer-link text-gray-300 hover:text-white transition-colors duration-200">
+                    Contact
+                  </a>
                 </div>
               </div>
             </div>
@@ -79,7 +87,7 @@ export default function Footer() {
               {/* Left Social Icons */}
               <div className="footer-social-wrap flex items-center gap-4">
                 <a
-                  href="https://www.linkedin.com/in/patryk-baranowski/"
+                  href="https://www.linkedin.com/company/blask"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-link w-5 h-5 text-gray-400 hover:text-white transition-opacity duration-200"
@@ -90,7 +98,7 @@ export default function Footer() {
                   </div>
                 </a>
                 <a
-                  href="https://x.com/pat_baranowski"
+                  href="https://x.com/blask_agency"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-link w-5 h-5 text-gray-400 hover:text-white transition-opacity duration-200"
@@ -100,11 +108,22 @@ export default function Footer() {
                     {twitterXIcon}
                   </div>
                 </a>
+                <a
+                  href="https://instagram.com/blask_agency"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link w-5 h-5 text-gray-400 hover:text-white transition-opacity duration-200"
+                  aria-label="Instagram"
+                >
+                  <div className="icon-social w-full h-full">
+                    {instagramIcon}
+                  </div>
+                </a>
               </div>
 
               {/* Right Copyright Notice */}
               <div className="label-small label-medium text-xs font-mono text-gray-400 tracking-wider uppercase">
-                © {currentYear} BLASK. ALL RIGHTS RESERVED.
+                © 2026. ALL RIGHTS RESERVED.
               </div>
             </div>
           </div>

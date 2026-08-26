@@ -31,19 +31,18 @@ export default function Hero() {
           className="headline-home-b"
         >
           <div className="heading-column engagement">
-            <Tag text="design agency" variant="base" />
+            <Tag text="technology partner" variant="base" />
             <h1>
-              Growth-driven <em>creative<br />partner</em> for tech companies
+              Engineering-led <em>digital partner</em><br />for ambitious businesses
             </h1>
             <div className="max-width-600">
               <div className="body-medium">
-                We turn complex products into clear, high-converting websites and interfaces - combining UX, design systems, and no-code development to help teams{' '}
-                <span className="text-weight-semi-bold">launch faster and scale with confidence</span>.
+                We design, build, and automate digital products that work as hard as your business does — from websites and apps to AI systems that run in the background.
               </div>
             </div>
           </div>
           <div className="button-wrap-centered">
-            <Button href="https://calendly.com/blask-agency/discovery" text="Book an intro call" variant="main" />
+            <Button href="https://calendly.com/blask-agency/discovery" text="Book a Free Consultation" variant="main" />
           </div>
         </motion.div>
 
